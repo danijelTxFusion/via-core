@@ -1,5 +1,60 @@
 # Changelog
 
+## [18.0.0](https://github.com/danijelTxFusion/via-core/compare/prover-v17.1.1...prover-v18.0.0) (2025-12-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* force minor bump for provers release -- v25 ([#3208](https://github.com/danijelTxFusion/via-core/issues/3208))
+
+### Features
+
+* Add  initial version prover_autoscaler ([#2993](https://github.com/danijelTxFusion/via-core/issues/2993)) ([4f6665e](https://github.com/danijelTxFusion/via-core/commit/4f6665e117ede28ddd79063049d2d145b1120471))
+* Add min_replicas for SimpleScaler, apply_min_to_namespace config  ([#3282](https://github.com/danijelTxFusion/via-core/issues/3282)) ([122aac5](https://github.com/danijelTxFusion/via-core/commit/122aac50d32baf47490ae6fed3c1236520952d1b))
+* allow vm2 tracers to stop execution ([#3183](https://github.com/danijelTxFusion/via-core/issues/3183)) ([bb529da](https://github.com/danijelTxFusion/via-core/commit/bb529dad37bc8808bbb6450a6f5c732faebe2ddf))
+* **consensus:** Added view_timeout to consensus config ([#3383](https://github.com/danijelTxFusion/via-core/issues/3383)) ([ab756ec](https://github.com/danijelTxFusion/via-core/commit/ab756ecaaf34361359a0e1c4585e74d3d37fd430))
+* **consensus:** Support for syncing blocks before consensus genesis over p2p network ([#3040](https://github.com/danijelTxFusion/via-core/issues/3040)) ([1cdcbcd](https://github.com/danijelTxFusion/via-core/commit/1cdcbcdbd2b9e16e8e1eca8174bd4e0c2b85c43a))
+* **consensus:** Update consensus dependencies ([#3339](https://github.com/danijelTxFusion/via-core/issues/3339)) ([2b39aad](https://github.com/danijelTxFusion/via-core/commit/2b39aadf237fc1a3688250e2dbb417a7031b1ac3))
+* **contract-verifier:** Support Solidity contracts with EVM bytecode in contract verifier ([#3225](https://github.com/danijelTxFusion/via-core/issues/3225)) ([d8714d3](https://github.com/danijelTxFusion/via-core/commit/d8714d3cf4b7bd5b7f2933b38b9069c9692d1f8f))
+* **da-clients:** add secrets ([#2954](https://github.com/danijelTxFusion/via-core/issues/2954)) ([fdaac7f](https://github.com/danijelTxFusion/via-core/commit/fdaac7fa135712a21f17a4a0bcdad04f8a0b2f8e))
+* **dal:** support blob chunk by introducing index column to store the chunk ([59d2ecb](https://github.com/danijelTxFusion/via-core/commit/59d2ecb124f592769da54ac59bafd6befad04b51))
+* force minor bump for provers release -- v25 ([#3208](https://github.com/danijelTxFusion/via-core/issues/3208)) ([a7334a5](https://github.com/danijelTxFusion/via-core/commit/a7334a5de77c35a7c2b5398f1ce3eecd5c7624d2))
+* gateway preparation ([#3006](https://github.com/danijelTxFusion/via-core/issues/3006)) ([7f9e80d](https://github.com/danijelTxFusion/via-core/commit/7f9e80d448ea564b5e83dbba6d6010518dc9511f))
+* **node/via_zk_verification:** add logic to fetch the proof from object store when the verifier uses EN as DA provider ([09fe8f3](https://github.com/danijelTxFusion/via-core/commit/09fe8f3a7468411ddad14a7db3e428977141ec48))
+* **prover:** Add cluster name autodetection ([#3227](https://github.com/danijelTxFusion/via-core/issues/3227)) ([2cf30f2](https://github.com/danijelTxFusion/via-core/commit/2cf30f21abc1c7d093192d35257be8f61fae27cd))
+* **prover:** Add min_provers and dry_run features. Improve metrics and test. ([#3129](https://github.com/danijelTxFusion/via-core/issues/3129)) ([a7d729c](https://github.com/danijelTxFusion/via-core/commit/a7d729c4dfbda19bcfd4dc6270b1d4d39db1e7d3))
+* **prover:** Add queue metric to report autoscaler view of the queue. ([#3206](https://github.com/danijelTxFusion/via-core/issues/3206)) ([7e2f9fa](https://github.com/danijelTxFusion/via-core/commit/7e2f9fa38188f7b6baf9d467f3a465e0c1c311fc))
+* **prover:** Add scale failure events watching and pods eviction. ([#3175](https://github.com/danijelTxFusion/via-core/issues/3175)) ([c3df94e](https://github.com/danijelTxFusion/via-core/commit/c3df94eeb2610fdf3cb60492bfb51dbd22698903))
+* **prover:** Add sending scale requests for Scaler targets ([#3194](https://github.com/danijelTxFusion/via-core/issues/3194)) ([6bc89c6](https://github.com/danijelTxFusion/via-core/commit/6bc89c624ad235461c77f6201338950d96f2d5a7))
+* **prover:** Add support for scaling WGs and compressor ([#3179](https://github.com/danijelTxFusion/via-core/issues/3179)) ([f0098c8](https://github.com/danijelTxFusion/via-core/commit/f0098c846ca44f0dafacdf19a8611d5e45f3203d))
+* **prover:** Autoscaler sends scale request to appropriate agents. ([#3150](https://github.com/danijelTxFusion/via-core/issues/3150)) ([a2b0df4](https://github.com/danijelTxFusion/via-core/commit/a2b0df4b643b9ae8fde998f1ba74ad0912da405c))
+* ProverJobProcessor & circuit prover ([#3287](https://github.com/danijelTxFusion/via-core/issues/3287)) ([1e5855c](https://github.com/danijelTxFusion/via-core/commit/1e5855c53fd9a3b36e7abd657aa6c9b752ed3545))
+* **prover:** Move prover_autoscaler config into crate ([#3222](https://github.com/danijelTxFusion/via-core/issues/3222)) ([35f796c](https://github.com/danijelTxFusion/via-core/commit/35f796c101e1694026f21b327323918521567c6d))
+* **prover:** Update witness generator to zkevm_test_harness 0.150.6 ([#3029](https://github.com/danijelTxFusion/via-core/issues/3029)) ([5d2b457](https://github.com/danijelTxFusion/via-core/commit/5d2b457116e2db624d61ddc9b4ab7ef069f11112))
+* **prover:** WG refactoring [#3](https://github.com/danijelTxFusion/via-core/issues/3) ([#2942](https://github.com/danijelTxFusion/via-core/issues/2942)) ([f71980e](https://github.com/danijelTxFusion/via-core/commit/f71980e55ad5234dd7acb3f625a262af1393e17b))
+* Support stable compiler for VM (and some other crates) ([#3248](https://github.com/danijelTxFusion/via-core/issues/3248)) ([3f497b2](https://github.com/danijelTxFusion/via-core/commit/3f497b2543daa3deb91f4206cab878c3e503fb2d))
+* **via_state_keeper:** change seal criteria for gateway ([7fd7070](https://github.com/danijelTxFusion/via-core/commit/7fd70701af4b6c71190995c91e810aee08f33313))
+* vm2 tracers can access storage ([#3114](https://github.com/danijelTxFusion/via-core/issues/3114)) ([513619e](https://github.com/danijelTxFusion/via-core/commit/513619e44efdade5ac3c54d8fca5e667429094e8))
+* **vm:** EVM emulator support – base ([#2979](https://github.com/danijelTxFusion/via-core/issues/2979)) ([23eb43a](https://github.com/danijelTxFusion/via-core/commit/23eb43a8fdad54923c09fef59a3d4de3fc577289))
+* **zk_toolbox:** Add SQL format for zk supervisor ([#2950](https://github.com/danijelTxFusion/via-core/issues/2950)) ([12f4bd7](https://github.com/danijelTxFusion/via-core/commit/12f4bd7ec4a7f1fe4e14446306b112e29393a049))
+* **zk_toolbox:** Redesign zk_toolbox commands ([#3003](https://github.com/danijelTxFusion/via-core/issues/3003)) ([950b282](https://github.com/danijelTxFusion/via-core/commit/950b28266d97b2917d5caabe8d2d6c0780666199))
+
+
+### Bug Fixes
+
+* Add prometheus exporter to circut prover ([#3311](https://github.com/danijelTxFusion/via-core/issues/3311)) ([f54a3b4](https://github.com/danijelTxFusion/via-core/commit/f54a3b41472d5399b4f4a0a3c88e48872975be6a))
+* added missing quote in prover query ([#3347](https://github.com/danijelTxFusion/via-core/issues/3347)) ([cdb049d](https://github.com/danijelTxFusion/via-core/commit/cdb049d3e2e80110edd3d326433d433d9f4a8b84))
+* allow compilation under current toolchain ([#3176](https://github.com/danijelTxFusion/via-core/issues/3176)) ([954043d](https://github.com/danijelTxFusion/via-core/commit/954043d33ed5e4c91a391af10c13bd0061098660))
+* **en:** fix metrics ([60c7752](https://github.com/danijelTxFusion/via-core/commit/60c7752a35d67d823ddba1314ac4ba280666a0c5))
+* Fix Doc lint. ([#3158](https://github.com/danijelTxFusion/via-core/issues/3158)) ([561a97e](https://github.com/danijelTxFusion/via-core/commit/561a97ed78a5a79d81048eea1b84aceefd69b728))
+* ignore unknown fields in rpc json response ([#2962](https://github.com/danijelTxFusion/via-core/issues/2962)) ([4d8f7f0](https://github.com/danijelTxFusion/via-core/commit/4d8f7f055a75eb82c3046c7ef7cc410e44b69613))
+* **prover:** Create reqwest client only once ([#3324](https://github.com/danijelTxFusion/via-core/issues/3324)) ([7725bdd](https://github.com/danijelTxFusion/via-core/commit/7725bddc4f50b242660070537dd25bd890ec25f8))
+* **prover:** Do not exit on missing watcher data. ([#3119](https://github.com/danijelTxFusion/via-core/issues/3119)) ([04a281a](https://github.com/danijelTxFusion/via-core/commit/04a281acee35c991a4136d240c367a80b4986a93))
+* **prover:** Remove unneeded dependencies, add default for graceful_shutdown_timeout ([#3242](https://github.com/danijelTxFusion/via-core/issues/3242)) ([84181c7](https://github.com/danijelTxFusion/via-core/commit/84181c77facc6c005abe926f21278dbdf79d4845))
+* **prover:** use `Version28` protocol version ([be932c0](https://github.com/danijelTxFusion/via-core/commit/be932c0087337c99b3420db10a92e50611826aa0))
+* **tee_verifier:** correctly initialize storage for re-execution ([#3017](https://github.com/danijelTxFusion/via-core/issues/3017)) ([a650c0c](https://github.com/danijelTxFusion/via-core/commit/a650c0c1aeec184a4400ce5e8d08a3ff614dfa25))
+* **vm:** Prepare new VM for use in API server and fix divergences ([#2994](https://github.com/danijelTxFusion/via-core/issues/2994)) ([0ebb773](https://github.com/danijelTxFusion/via-core/commit/0ebb7738a4103b793e6bda1a927ec7d2391f5724))
+
 ## [17.1.1](https://github.com/matter-labs/zksync-era/compare/prover-v17.1.0...prover-v17.1.1) (2024-11-26)
 
 
