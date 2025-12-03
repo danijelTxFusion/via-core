@@ -1,5 +1,12 @@
 # Changelog
 
+## [28.0.1](https://github.com/danijelTxFusion/via-core/compare/core-v28.0.0...core-v28.0.1) (2025-12-03)
+
+
+### Bug Fixes
+
+* **via_server:** add the comment ([#9](https://github.com/danijelTxFusion/via-core/issues/9)) ([0f24183](https://github.com/danijelTxFusion/via-core/commit/0f24183d6ce169ff06fe2f5ae9a77588edf12106))
+
 ## [28.0.0](https://github.com/danijelTxFusion/via-core/compare/core-v27.0.0...core-v28.0.0) (2025-12-02)
 
 
